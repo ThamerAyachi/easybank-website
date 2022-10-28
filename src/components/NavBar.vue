@@ -1,6 +1,6 @@
 <template>
 	<nav
-		class="flex justify-between items-center bg-white p-3 lg:mx-28 mx-3 md:mx-10"
+		class="flex justify-between items-center bg-white p-3 lg:px-28 px-3 md:px-10"
 	>
 		<!-- logo -->
 		<div class="px-2 py-5">
@@ -77,7 +77,7 @@
 			>
 				<div
 					v-show="dropdownOpen"
-					class="absolute right-0 z-20 w-full py-2 mt-8 bg-white rounded-md shadow"
+					class="absolute left-0 z-20 w-11/12 py-2 mt-8 m-5 bg-white rounded-md shadow"
 				>
 					<a href="#" class="w-full block text-center p-3">Home</a>
 					<a href="#" class="w-full block text-center p-3">About</a>
