@@ -8,6 +8,7 @@ module.exports = {
 				tc: "#9698a6",
 				limeG: "#31d35c",
 				cyan: "#2bb7da",
+				bgG: "#f3f4f6",
 			},
 		},
 	},

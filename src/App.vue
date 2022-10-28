@@ -3,6 +3,7 @@
 		<NavBar />
 	</header>
 	<main>
+		<!-- part one -->
 		<div class="md:grid grid-cols-2">
 			<!-- for mobile -->
 			<div class="md:hidden relative">
@@ -144,6 +145,22 @@
 				<div class="absolute top-1 right-1 flex justify-center w-full">
 					<img class="" src="/img/image-mockups.png" alt="" />
 				</div>
+			</div>
+		</div>
+
+		<!-- part two -->
+		<div class="bg-bgG my-20 lg:px-40 lg:py-20 py-5 px-5">
+			<div class="px-1">
+				<h1
+					class="font-light text-4xl my-5 text-gray-800 text-center md:text-left"
+				>
+					Why choose Easybank?
+				</h1>
+				<p class="text-tc text-center md:text-left">
+					We leverage Open Banking to turn your bank account into your financial
+					hub. <br />
+					Control your finances like never before.
+				</p>
 			</div>
 		</div>
 	</main>
