@@ -149,7 +149,8 @@
 		</div>
 
 		<!-- part two -->
-		<div class="bg-bgG my-20 lg:px-40 lg:py-20 py-5 px-5">
+		<div class="bg-bgG my-20 lg:px-40 lg:pt-20 py-5 px-5">
+			<!-- firs paragraph -->
 			<div class="px-1">
 				<h1
 					class="font-light text-4xl my-5 text-gray-800 text-center md:text-left"
@@ -162,6 +163,26 @@
 					Control your finances like never before.
 				</p>
 			</div>
+
+			<!-- taps -->
+			<div
+				class="px-1 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 space-x-3"
+			>
+				<div
+					v-for="(t, i) in taps"
+					:key="i"
+					class="p-3 md:my-20 my-10 space-y-10 text-center lg:text-left"
+				>
+					<!-- icon -->
+					<div class="flex justify-center lg:block">
+						<span v-html="t.icon"></span>
+					</div>
+					<!-- title -->
+					<h2 class="text-2xl text-gray-700">{{ t.title }}</h2>
+					<!-- content -->
+					<p class="text-tc">{{ t.content }}</p>
+				</div>
+			</div>
 		</div>
 	</main>
 </template>
@@ -169,10 +190,19 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import NavBar from "./components/NavBar.vue";
+import { taps } from "./assets/data";
 
 export default defineComponent({
 	name: "App",
 	components: { NavBar },
+	data() {
+		return {
+			taps: taps,
+		};
+	},
+	mounted() {
+		// console.log(this.taps);
+	},
 });
 </script>
 
